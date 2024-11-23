@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Usuário</title>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de Usuário</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Página Principal</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#projetos">Meus Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Formulário de Cadastro</h2>
+            <form action="/envio_dados" method="post">
+                <label for="nomeCompleto">Nome:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" required><br><br>
+
+                <label for="emailUsuario">Email:</label>
+                <input type="email" id="emailUsuario" name="emailUsuario" required><br><br>
+
+                <label for="senhaUsuario">Senha:</label>
+                <input type="password" id="senhaUsuario" name="senhaUsuario" required><br><br>
+
+                <label for="generoUsuario">Gênero:</label>
+                <select id="generoUsuario" name="generoUsuario">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select><br><br>
+
+                <p>Interesses:</p>
+                <label for="interesse1">
+                    <input type="checkbox" id="interesse1" name="interesse1">
+                    Programação
+                </label><br>
+                <label for="interesse2">
+                    <input type="checkbox" id="interesse2" name="interesse2">
+                    Jogos Online
+                </label><br>
+                <label for="interesse3">
+                    <input type="checkbox" id="interesse3" name="interesse3">
+                    Pinturas
+                </label><br><br>
+
+                <p>Biografia:</p>
+                <textarea id="bioUsuario" name="bioUsuario" rows="4" cols="40"></textarea><br><br>
+        
+                <input type="submit" id="botaoEnviar" value="Enviar">
+                <input type="reset" id="botaoRedefinir" value="Redefinir">
+                <p>©️2024 Meu Site Pessoal</p>
+            </form>
+        </section>
+    </body>
+</html>
